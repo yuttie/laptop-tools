@@ -4,4 +4,5 @@ MASTER=${MASTER:-eDP1}
 SLAVE=${SLAVE:-DP1}
 POS=${POS:-right-of}
 
-xrandr --output $MASTER --auto --output $SLAVE --auto --$POS $MASTER
+xrandr --output $MASTER --auto \
+       --output $SLAVE  --auto --$POS $MASTER

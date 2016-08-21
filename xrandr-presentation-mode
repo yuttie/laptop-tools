@@ -4,4 +4,5 @@ MASTER=${MASTER:-eDP1}
 SLAVE=${SLAVE:-DP1}
 RES=${RES:-1024x768}
 
-xrandr --output $MASTER --mode $RES --output $SLAVE --mode $RES --same-as $MASTER
+xrandr --output $MASTER --mode $RES \
+       --output $SLAVE  --mode $RES --same-as $MASTER
