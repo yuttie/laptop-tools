@@ -1,3 +1,7 @@
 #!/bin/sh
 DESCRIPTION="Multi-screen Mode"
-xrandr --output eDP1 --auto --output DP1 --auto --right-of eDP1
+MASTER=${MASTER:-eDP1}
+SLAVE=${SLAVE:-DP1}
+POS=${POS:-right-of}
+
+xrandr --output $MASTER --auto --output $SLAVE --auto --$POS $MASTER
