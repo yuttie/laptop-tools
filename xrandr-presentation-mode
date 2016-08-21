@@ -1,0 +1,4 @@
+#!/bin/sh
+DESCRIPTION="Presentation Mode"
+RES=1024x768
+xrandr --output eDP1 --mode $RES --output DP1 --mode $RES --same-as eDP1
